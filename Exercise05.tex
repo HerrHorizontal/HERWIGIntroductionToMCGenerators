@@ -1,0 +1,47 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{../common/style_exercise}
+\input{../common/definitions}
+\usepackage[nameinlink]{cleveref}
+
+\begin{document}
+    \names
+    \header{5}{December 01, 2022} % put here # of exercise (argument 1) and date to hand in exercise (argument 2)
+
+    \section*{Event Generation with Herwig7}
+
+    \subsection*{\Herwig}
+
+    \hyperref{https://herwig.hepforge.org/}{}{}{Herwig} is a multi-purpose particle physics event generator.
+    It is composed of many modules, which have been developed over many years by various authors.
+    In the current version it is written in C++.
+    Many efforts have been done to improve and develop the description of particle collisions, which involve heavy theoretical and phenomenological research of perturbative and non-perturbative Quantum Field Theory (QFT) and empirical models.
+    One of the \hyperref{https://www.itp.kit.edu/memberpages/gieseke}{}{}{reasearch groups of \Herwig lead by Stefan Gieseke} is based here at the KIT.
+    \\\\
+    Multi-purpose (or general-purpose) event generators like \Herwig\footnote{Other multi-purpose generators are \hyperref{http://home.thep.lu.se/Pythia/}{}{}{\Pythia} or \hyperref{https://sherpa-team.gitlab.io/}{}{}{\Sherpa}, which provide similar functionalities, but involve in many cases slightly different models.} can be used to generate events of a variety of colliding particles using various types of Monte-Carlo (MC) algorithms in several stages.
+    These are based on perturbative and non-perturbative QFTs or motivated by empirical models, which aim to describe observed phenomena and characteristic properties of high energy collisions.
+    This exercise is built with the notion to give you a feeling for the necessary generation steps, in our case implemented in \Herwig, to achieve a good prediction for measureable data, without the necessity to understand all technical and theoretical details.
+
+
+    \subsection*{\Rivet}
+
+    \hyperref{https://rivet.hepforge.org/}{}{}{\Rivet} is a C++ based toolkit, which enables the implementation of robust and efficient analyses of generator outputs.
+    Such analysis, provided by the analyzers of the corresponding experiments, are mainly used for comparison of generated predictions with unfolded measurements.
+    Therefore they can be used for generator development, validation and tuning of free model parameters.
+    Moreover, it provides an easy and convenient infrastructure for analyzing generated particle-collision events, which we will use in this exercise.
+
+
+    \subsection*{Getting Started}
+
+    Open the \href{https://jupytermachine.etp.kit.edu}{jupytermachine} for the exercises and start a \texttt{Herwig} server. Once loaded, update your local copy of the \href{https://gitlab.etp.kit.edu/Lehre/tp1_forstudents}{tp1\_forstudents} repository and work through the Jupyter Notebook inside the \texttt{Exercise05} folder.
+
+\vfill
+
+\hrule
+  \begin{center}
+    \includegraphics[width=\textwidth]{Vineta_Poster_Banner.pdf}
+  \end{center}
+  \noindent
+  \hrule
+
+
+\end{document}

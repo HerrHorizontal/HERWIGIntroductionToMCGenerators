@@ -1,0 +1,25 @@
+##################################################
+## ShowerHandler(s)
+##################################################
+
+cd /Herwig/EventHandlers
+
+## Switches for turning generation steps off and on
+## Per default everything is turned on, so comment 
+## in the lines below to turn off the correponding
+## step in the event generation
+
+## Parton shower
+set EventHandler:CascadeHandler NULL
+
+## Hadronization
+set EventHandler:HadronizationHandler NULL
+
+## Hadron decays
+set EventHandler:DecayHandler NULL
+
+## MPI/UE 
+## Sub-module of PS CascadeHandler
+## Don't turn off both PS and MPI CascadeHandler
+## MPI already turned off when PS is
+# set EventHandler:CascadeHandler:MPIHandler NULL
